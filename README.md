@@ -1,0 +1,2 @@
+# amaze-theme
+Amaze Theme
