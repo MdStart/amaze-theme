@@ -1,0 +1,354 @@
+﻿/* Colors */
+$color_theme: #EE660F;
+$color_text: #373737;
+$color_white: #FFFFFF;
+$color_bg_grey: #F9F9F9;
+$color_black: #000000;
+$color_bg_overlay_blue: rgba(16, 182, 221, 0.9);
+$color_bg_overlay_black: rgba(0, 0, 0, 0.8);
+
+/* General Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: $color_text;
+}
+img {
+    width: 100%;
+    object-fit: cover;
+}
+.bg-grey {
+    background-color: $color_bg_grey;
+}
+.bg-black {
+    background-color: $color_black;
+}
+.text-white {
+    color: $color_white;
+}
+.p0 {
+    padding: 0;
+}
+.pv15 {
+    padding: 15px 0;
+}
+.parallax-mirror {
+    z-index: 0 !important;
+}
+.parallax-mirror:first-of-type {
+    z-index: -100 !important;
+}
+
+/* Layout Styles */
+.navbar { 
+    background-color: transparent;
+    border-color: transparent;
+    margin-bottom: 0;
+    border: 0;
+    &.navbar-default .navbar-toggle {
+        border-color: transparent;
+    }
+    .navbar-collapse {
+        max-height: inherit;
+    }
+    &.affix {
+        background-color: $color_white;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        .wow {
+            visibility: visible !important;
+        }
+    } 
+    .navbar-nav > li {
+        padding: 15px;
+        cursor: pointer;
+        > a {
+            display: inline;
+            font-size: 13px;
+            font-weight: 600;
+            color: $color_text;
+            text-transform: uppercase;
+            padding: 0 0 2px 0;
+            border-bottom: 2px solid transparent;
+        }
+        &:hover > a {
+            color: $color_theme;
+            border-bottom-color: $color_theme;
+        }
+    } 
+}
+.amaze-section {
+    padding: 50px 0 80px;
+    .section-title {
+        font-size: 46px;
+        font-weight: 600;
+        color: $color_theme;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .section-subtitle {
+        font-size: 15px;
+        text-align: center;
+        width: 65%;
+        margin: 0 auto;
+    }
+    .horizontal-partition {
+        width: 50px;
+        border-width: 4px;
+        border-color: $color_theme;
+        margin: 45px auto;
+    }
+    .content-block h3 {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 26px;
+    }
+}
+.content-center {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+/* Home */
+.amaze-home { 
+    height: 100vh;
+    min-height: 200px;
+    padding: 100px 0;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    .container {
+        h1 {
+            font-size: 50px;
+            font-weight: 600;
+            text-transform: uppercase;
+            line-height: 70px;
+            margin: 0;
+        }
+        p {
+            font-size: 20px;
+        }
+        .btn {
+            font-size: 15px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: $color_white;
+            background-color: $color_theme;
+            height: 50px;
+            width: 185px;
+            margin-top: 25px;
+            &:focus {
+                outline: 0;
+            }
+        }
+    }
+}
+
+/* About */
+.amaze-about {
+    .content-block {
+        h3 {
+            margin-top: 0;
+        }
+        ul {
+            -webkit-padding-start: 26px;
+            li {
+                font-size: 15px;
+                padding: 0 0 8px 5px;
+            }
+        } 
+    }
+}
+
+/* Services */
+.amaze-services {
+    .content-block {
+        h3 {
+            margin: 40px 0 20px;
+            text-transform: uppercase;
+        }
+        p {
+            font-size: 15px;
+        }
+    }
+}
+
+/* Portfolio */
+.amaze-portfolio .image-block {
+    display: block;
+    .hover-block {
+        background-color: $color_bg_overlay_blue;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 15px;
+        right: 15px;
+        margin: 20px;
+        color: $color_white;
+        display: none;
+        i {
+            font-size: 90px;
+        }
+        h4 {
+            font-size: 20px;
+            font-weight: 700;
+        }
+        p {
+            font-size: 15px;
+            margin-bottom: 0;
+            span {
+                font-size: 25px;
+                line-height: 16px;
+                font-weight: 700;
+                padding: 0 3px;
+            }
+        }
+    }
+    &:hover .hover-block {
+        display: block;
+    }
+}
+
+/* Footer */
+footer {
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    .amaze-footer {
+        background-color: $color_bg_overlay_black;
+        color: $color_white;
+        padding: 80px 0 90px;
+        h1 {
+            text-transform: uppercase;
+            font-weight: 700;
+            line-height: 50px;
+            text-align: center;
+        }
+        input {
+            width: 100%;
+            background-color: transparent;
+            box-shadow: none;
+            border: 0;
+            border-radius: 0;
+            border-bottom: 1px solid $color_white;
+            font-size: 20px;
+            padding: 6px 0;
+            margin-top: 65px;
+            &::-webkit-input-placeholder {
+                color: $color_white;
+            }
+            &:focus {
+                outline: 0;
+            }
+        }
+        .btn {
+            background-color: $color_theme;
+            text-transform: uppercase;
+            font-size: 15px;
+            padding: 12px 50px;
+            margin-top: 60px;
+            &:hover, &:focus {
+                color: $color_white;
+                outline: 0;
+            }
+        }
+    }
+}
+
+/* Responsive */
+@media (min-width: 768px) and (max-width: 1200px) {
+    footer .amaze-footer {
+        h1 {
+            font-size: 24px;
+            line-height: 36px;
+        }
+        input {
+            font-size: 18px;
+            margin-top: 48px;
+        }
+        .btn {
+            padding: 12px 30px;
+            margin-top: 40px;
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .amaze-portfolio .image-block .hover-block {
+        i {
+            font-size: 30px;
+        }
+        h4 {
+            font-size: 16px;
+            margin-bottom: 0;
+        }
+        padding {
+            font-size: 12px;
+        }
+    } 
+}
+@media (max-width: 767px) {
+    .navbar .navbar-collapse {
+        background-color: $color_white;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    .amaze-home .container {
+        h1 {
+            font-size: 24px;
+            line-height: 36px;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 18px;
+        }
+    } 
+    .amaze-section {
+        padding: 30px 0 50px;
+        .section-title {
+            font-size: 36px;
+        }
+        .horizontal-partition {
+            margin: 25px auto;
+        }
+    }
+    .amaze-about .content-block {
+        margin-top: 20px;
+    }
+    .amaze-services {
+        .row [class*="col-"] {
+            margin-bottom: 25px;
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        } 
+        .content-block h3 {
+            margin: 25px 0 12px;
+        }
+    }
+    .amaze-portfolio .row [class*="col-"] {
+        margin-bottom: 15px;
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+        .image-block .hover-block i {
+            font-size: 60px;
+        }
+    }
+    footer .amaze-footer {
+        padding: 50px 0;
+        h1 {
+            font-size: 24px;
+            line-height: 36px;
+        }
+        .p0 {
+            padding: 0 15px;
+        }
+        input {
+            font-size: 18px;
+            margin-top: 30px;
+        }
+        .btn {
+            margin: 40px 0 20px;
+        }
+    }
+}
