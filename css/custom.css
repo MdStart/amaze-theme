@@ -23,11 +23,11 @@ img {
 .pv15 {
   padding: 15px 0; }
 
-.parallax-mirror {
-  z-index: 0 !important; }
-
-.parallax-mirror:first-of-type {
-  z-index: -100 !important; }
+.jarallax {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center; }
 
 /* Layout Styles */
 .navbar {
@@ -94,9 +94,7 @@ img {
   height: 100vh;
   min-height: 200px;
   padding: 100px 0;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center center; }
+  background-image: url("../img/Banner.png"); }
   .amaze-home .container h1 {
     font-size: 50px;
     font-weight: 600;
@@ -166,9 +164,7 @@ img {
 
 /* Footer */
 footer {
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center center; }
+  background-image: url("../img/FooterBanner.png"); }
   footer .amaze-footer {
     background-color: rgba(0, 0, 0, 0.8);
     color: #FFFFFF;
