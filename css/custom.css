@@ -59,26 +59,26 @@ img {
       color: #EE660F;
       border-bottom-color: #EE660F; }
 
-.amaze-section {
+.section {
   padding: 50px 0 80px; }
-  .amaze-section .section-title {
+  .section .section-title {
     font-size: 46px;
     font-weight: 600;
     color: #EE660F;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 15px; }
-  .amaze-section .section-subtitle {
+  .section .section-subtitle {
     font-size: 15px;
     text-align: center;
     width: 65%;
     margin: 0 auto; }
-  .amaze-section .horizontal-partition {
+  .section .horizontal-partition {
     width: 50px;
     border-width: 4px;
     border-color: #EE660F;
     margin: 45px auto; }
-  .amaze-section .content-block h3 {
+  .section .content-block h3 {
     font-size: 20px;
     font-weight: 600;
     line-height: 26px; }
@@ -90,20 +90,20 @@ img {
   text-align: center; }
 
 /* Home */
-.amaze-home {
+.section-home {
   height: 100vh;
   min-height: 200px;
   padding: 100px 0;
   background-image: url("../img/Banner.png"); }
-  .amaze-home .container h1 {
+  .section-home .container h1 {
     font-size: 50px;
     font-weight: 600;
     text-transform: uppercase;
     line-height: 70px;
     margin: 0; }
-  .amaze-home .container p {
+  .section-home .container p {
     font-size: 20px; }
-  .amaze-home .container .btn {
+  .section-home .container .btn {
     font-size: 15px;
     font-weight: 600;
     text-transform: uppercase;
@@ -112,31 +112,31 @@ img {
     height: 50px;
     width: 185px;
     margin-top: 25px; }
-    .amaze-home .container .btn:focus {
+    .section-home .container .btn:focus {
       outline: 0; }
 
 /* About */
-.amaze-about .content-block h3 {
+.section-about .content-block h3 {
   margin-top: 0; }
 
-.amaze-about .content-block ul {
+.section-about .content-block ul {
   -webkit-padding-start: 26px; }
-  .amaze-about .content-block ul li {
+  .section-about .content-block ul li {
     font-size: 15px;
     padding: 0 0 8px 5px; }
 
 /* Services */
-.amaze-services .content-block h3 {
+.section-services .content-block h3 {
   margin: 40px 0 20px;
   text-transform: uppercase; }
 
-.amaze-services .content-block p {
+.section-services .content-block p {
   font-size: 15px; }
 
 /* Portfolio */
-.amaze-portfolio .image-block {
+.section-portfolio .image-block {
   display: block; }
-  .amaze-portfolio .image-block .hover-block {
+  .section-portfolio .image-block .hover-block {
     background-color: rgba(16, 182, 221, 0.9);
     position: absolute;
     top: 0;
@@ -146,119 +146,129 @@ img {
     margin: 20px;
     color: #FFFFFF;
     display: none; }
-    .amaze-portfolio .image-block .hover-block i {
+    .section-portfolio .image-block .hover-block i {
       font-size: 90px; }
-    .amaze-portfolio .image-block .hover-block h4 {
+    .section-portfolio .image-block .hover-block h4 {
       font-size: 20px;
       font-weight: 700; }
-    .amaze-portfolio .image-block .hover-block p {
+    .section-portfolio .image-block .hover-block p {
       font-size: 15px;
       margin-bottom: 0; }
-      .amaze-portfolio .image-block .hover-block p span {
+      .section-portfolio .image-block .hover-block p span {
         font-size: 25px;
         line-height: 16px;
         font-weight: 700;
         padding: 0 3px; }
-  .amaze-portfolio .image-block:hover .hover-block {
+  .section-portfolio .image-block:hover .hover-block {
     display: block; }
 
 /* Footer */
 footer {
-  background-image: url("../img/FooterBanner.png"); }
-  footer .amaze-footer {
+  background-image: url("../img/FooterBanner.png");
+  color: #FFFFFF;
+  padding: 80px 0 90px;
+  position: relative; }
+  footer:after {
     background-color: rgba(0, 0, 0, 0.8);
-    color: #FFFFFF;
-    padding: 80px 0 90px; }
-    footer .amaze-footer h1 {
-      text-transform: uppercase;
-      font-weight: 700;
-      line-height: 50px;
-      text-align: center; }
-    footer .amaze-footer input {
-      width: 100%;
-      background-color: transparent;
-      box-shadow: none;
-      border: 0;
-      border-radius: 0;
-      border-bottom: 1px solid #FFFFFF;
-      font-size: 20px;
-      padding: 6px 0;
-      margin-top: 65px; }
-      footer .amaze-footer input::-webkit-input-placeholder {
-        color: #FFFFFF; }
-      footer .amaze-footer input:focus {
-        outline: 0; }
-    footer .amaze-footer .btn {
-      background-color: #EE660F;
-      text-transform: uppercase;
-      font-size: 15px;
-      padding: 12px 50px;
-      margin-top: 60px; }
-      footer .amaze-footer .btn:hover, footer .amaze-footer .btn:focus {
-        color: #FFFFFF;
-        outline: 0; }
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0; }
+  footer .container {
+    position: relative;
+    z-index: 1; }
+  footer h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 50px;
+    text-align: center; }
+  footer input {
+    width: 100%;
+    background-color: transparent;
+    box-shadow: none;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid #FFFFFF;
+    font-size: 20px;
+    padding: 6px 0;
+    margin-top: 65px; }
+    footer input::-webkit-input-placeholder {
+      color: #FFFFFF; }
+    footer input:focus {
+      outline: 0; }
+  footer .btn {
+    background-color: #EE660F;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 12px 50px;
+    margin-top: 60px; }
+    footer .btn:hover, footer .btn:focus {
+      color: #FFFFFF;
+      outline: 0; }
 
 /* Responsive */
 @media (min-width: 768px) and (max-width: 1200px) {
-  footer .amaze-footer h1 {
+  footer h1 {
     font-size: 24px;
     line-height: 36px; }
-  footer .amaze-footer input {
+  footer input {
     font-size: 18px;
     margin-top: 48px; }
-  footer .amaze-footer .btn {
+  footer .btn {
     padding: 12px 30px;
     margin-top: 40px; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .amaze-portfolio .image-block .hover-block i {
+  .section-portfolio .image-block .hover-block i {
     font-size: 30px; }
-  .amaze-portfolio .image-block .hover-block h4 {
+  .section-portfolio .image-block .hover-block h4 {
     font-size: 16px;
     margin-bottom: 0; }
-  .amaze-portfolio .image-block .hover-block padding {
+  .section-portfolio .image-block .hover-block padding {
     font-size: 12px; } }
 
 @media (max-width: 767px) {
   .navbar .navbar-collapse {
     background-color: #FFFFFF;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); }
-  .amaze-home .container h1 {
+  .section-home .container h1 {
     font-size: 24px;
     line-height: 36px;
     margin-bottom: 10px; }
-  .amaze-home .container p {
+  .section-home .container p {
     font-size: 18px; }
-  .amaze-section {
+  .section {
     padding: 30px 0 50px; }
-    .amaze-section .section-title {
+    .section .section-title {
       font-size: 36px; }
-    .amaze-section .horizontal-partition {
+    .section .horizontal-partition {
       margin: 25px auto; }
-  .amaze-about .content-block {
+  .section-about .content-block {
     margin-top: 20px; }
-  .amaze-services .row [class*="col-"] {
+  .section-services .row [class*="col-"] {
     margin-bottom: 25px; }
-    .amaze-services .row [class*="col-"]:last-of-type {
+    .section-services .row [class*="col-"]:last-of-type {
       margin-bottom: 0; }
-  .amaze-services .content-block h3 {
+  .section-services .content-block h3 {
     margin: 25px 0 12px; }
-  .amaze-portfolio .row [class*="col-"] {
+  .section-portfolio .row [class*="col-"] {
     margin-bottom: 15px; }
-    .amaze-portfolio .row [class*="col-"]:last-of-type {
+    .section-portfolio .row [class*="col-"]:last-of-type {
       margin-bottom: 0; }
-    .amaze-portfolio .row [class*="col-"] .image-block .hover-block i {
+    .section-portfolio .row [class*="col-"] .image-block .hover-block i {
       font-size: 60px; }
-  footer .amaze-footer {
+  footer {
     padding: 50px 0; }
-    footer .amaze-footer h1 {
+    footer h1 {
       font-size: 24px;
       line-height: 36px; }
-    footer .amaze-footer .p0 {
+    footer .p0 {
       padding: 0 15px; }
-    footer .amaze-footer input {
+    footer input {
       font-size: 18px;
       margin-top: 30px; }
-    footer .amaze-footer .btn {
+    footer .btn {
       margin: 40px 0 20px; } }
 

@@ -75,7 +75,7 @@ img {
         }
     } 
 }
-.amaze-section {
+.section {
     padding: 50px 0 80px;
     .section-title {
         font-size: 46px;
@@ -111,7 +111,7 @@ img {
 }
 
 /* Home */
-.amaze-home { 
+.section-home { 
     height: 100vh;
     min-height: 200px;
     padding: 100px 0;
@@ -144,7 +144,7 @@ img {
 }
 
 /* About */
-.amaze-about {
+.section-about {
     .content-block {
         h3 {
             margin-top: 0;
@@ -160,7 +160,7 @@ img {
 }
 
 /* Services */
-.amaze-services {
+.section-services {
     .content-block {
         h3 {
             margin: 40px 0 20px;
@@ -173,7 +173,7 @@ img {
 }
 
 /* Portfolio */
-.amaze-portfolio .image-block {
+.section-portfolio .image-block {
     display: block;
     .hover-block {
         background-color: $color_bg_overlay_blue;
@@ -211,50 +211,61 @@ img {
 /* Footer */
 footer {
     background-image: url('../img/FooterBanner.png');
-    .amaze-footer {
+    color: $color_white;
+    padding: 80px 0 90px;
+    position: relative;
+    &:after {
         background-color: $color_bg_overlay_black;
-        color: $color_white;
-        padding: 80px 0 90px;
-        h1 {
-            text-transform: uppercase;
-            font-weight: 700;
-            line-height: 50px;
-            text-align: center;
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+    .container {
+        position: relative;
+        z-index: 1;
+    }
+    h1 {
+        text-transform: uppercase;
+        font-weight: 700;
+        line-height: 50px;
+        text-align: center;
+    }
+    input {
+        width: 100%;
+        background-color: transparent;
+        box-shadow: none;
+        border: 0;
+        border-radius: 0;
+        border-bottom: 1px solid $color_white;
+        font-size: 20px;
+        padding: 6px 0;
+        margin-top: 65px;
+        &::-webkit-input-placeholder {
+            color: $color_white;
         }
-        input {
-            width: 100%;
-            background-color: transparent;
-            box-shadow: none;
-            border: 0;
-            border-radius: 0;
-            border-bottom: 1px solid $color_white;
-            font-size: 20px;
-            padding: 6px 0;
-            margin-top: 65px;
-            &::-webkit-input-placeholder {
-                color: $color_white;
-            }
-            &:focus {
-                outline: 0;
-            }
+        &:focus {
+            outline: 0;
         }
-        .btn {
-            background-color: $color_theme;
-            text-transform: uppercase;
-            font-size: 15px;
-            padding: 12px 50px;
-            margin-top: 60px;
-            &:hover, &:focus {
-                color: $color_white;
-                outline: 0;
-            }
+    }
+    .btn {
+        background-color: $color_theme;
+        text-transform: uppercase;
+        font-size: 15px;
+        padding: 12px 50px;
+        margin-top: 60px;
+        &:hover, &:focus {
+            color: $color_white;
+            outline: 0;
         }
     }
 }
 
 /* Responsive */
 @media (min-width: 768px) and (max-width: 1200px) {
-    footer .amaze-footer {
+    footer {
         h1 {
             font-size: 24px;
             line-height: 36px;
@@ -270,7 +281,7 @@ footer {
     }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-    .amaze-portfolio .image-block .hover-block {
+    .section-portfolio .image-block .hover-block {
         i {
             font-size: 30px;
         }
@@ -288,7 +299,7 @@ footer {
         background-color: $color_white;
         box-shadow: 0 2px 6px rgba(0,0,0,0.2);
     }
-    .amaze-home .container {
+    .section-home .container {
         h1 {
             font-size: 24px;
             line-height: 36px;
@@ -298,7 +309,7 @@ footer {
             font-size: 18px;
         }
     } 
-    .amaze-section {
+    .section {
         padding: 30px 0 50px;
         .section-title {
             font-size: 36px;
@@ -307,10 +318,10 @@ footer {
             margin: 25px auto;
         }
     }
-    .amaze-about .content-block {
+    .section-about .content-block {
         margin-top: 20px;
     }
-    .amaze-services {
+    .section-services {
         .row [class*="col-"] {
             margin-bottom: 25px;
             &:last-of-type {
@@ -321,7 +332,7 @@ footer {
             margin: 25px 0 12px;
         }
     }
-    .amaze-portfolio .row [class*="col-"] {
+    .section-portfolio .row [class*="col-"] {
         margin-bottom: 15px;
         &:last-of-type {
             margin-bottom: 0;
@@ -330,7 +341,7 @@ footer {
             font-size: 60px;
         }
     }
-    footer .amaze-footer {
+    footer {
         padding: 50px 0;
         h1 {
             font-size: 24px;

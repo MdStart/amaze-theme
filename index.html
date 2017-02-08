@@ -2,9 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="Theme Development">
+    <meta name="author" content="Shreel Bhatt">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <title>Amaze Theme</title>
 
     <!-- Bootstrap CSS -->
@@ -27,7 +33,7 @@
           <div class="container">
               <!-- Brand and toggle get grouped for better mobile display -->
               <div class="navbar-header">
-                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#amaze-navbar-collapse" aria-expanded="false">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#theme-navbar-collapse" aria-expanded="false">
                       <span class="sr-only">Toggle navigation</span>
                       <span class="icon-bar"></span>
                       <span class="icon-bar"></span>
@@ -36,12 +42,12 @@
                   <a class="navbar-brand wow swing" href=""><img src="img/Amaze-Logo.png" alt="Logo" /></a>
               </div>
               <!-- Collapsible Navbar -->
-              <div class="collapse navbar-collapse" id="amaze-navbar-collapse">
+              <div class="collapse navbar-collapse" id="theme-navbar-collapse">
                   <ul class="nav navbar-nav navbar-right">
-                      <li class="amaze-home-link"><a href="">Home</a></li>
-                      <li class="amaze-about-link"><a href="">About</a></li>
-                      <li class="amaze-services-link"><a href="">Services</a></li>
-                      <li class="amaze-portfolio-link"><a href="">Portfolio</a></li>
+                      <li class="home-link"><a href="">Home</a></li>
+                      <li class="about-link"><a href="">About</a></li>
+                      <li class="services-link"><a href="">Services</a></li>
+                      <li class="portfolio-link"><a href="">Portfolio</a></li>
                       <li><a href="">Team</a></li>
                       <li><a href="">Pricing</a></li>
                       <li><a href="">Contact</a></li>
@@ -49,17 +55,17 @@
               </div><!-- /.navbar-collapse -->
           </div><!-- /.container -->
       </nav>
-      <section class="amaze-home jarallax" data-jarallax>
+      <section class="section-home jarallax" data-jarallax>
           <div class="container content-center">
               <h1>We Create Amazing <br/> Software With Care</h1>
               <p>We are experts in web, mobile and enterprise solutions development.</p>
               <button class="btn wow flipInX" data-wow-delay="50ms">Learn More</button>
           </div>
       </section>
-      <section class="amaze-section amaze-about">
+      <section class="section section-about">
           <div class="container">
               <h1 class="section-title">About Amaze</h1>
-              <p class="section-subtitle">Release bandwidth user experience research & development branding termsheet business plan advisor analytics ecosystem entrepreneur freemium</p>
+              <p class="section-subtitle">Release bandwidth user experience research &amp; development branding termsheet business plan advisor analytics ecosystem entrepreneur freemium</p>
               <hr class="horizontal-partition" />
               <div class="row">
                   <div class="col-md-6 col-sm-6 col-xs-12">
@@ -85,10 +91,10 @@
               </div>
           </div>
       </section>
-      <section class="amaze-section amaze-services bg-grey">
+      <section class="section section-services bg-grey">
           <div class="container">
               <h1 class="section-title">What We Do</h1>
-              <p class="section-subtitle">Release bandwidth user experience research & development branding termsheet business plan advisor analytics ecosystem entrepreneur freemium</p>
+              <p class="section-subtitle">Release bandwidth user experience research &amp; development branding termsheet business plan advisor analytics ecosystem entrepreneur freemium</p>
               <hr class="horizontal-partition" />
               <div class="row">
                   <div class="col-md-4 col-sm-4 col-xs-12">
@@ -121,10 +127,10 @@
               </div>
           </div>
       </section>
-      <section class="amaze-section amaze-portfolio bg-black">
+      <section class="section section-portfolio bg-black">
           <div class="container">
               <h1 class="section-title">Our Works</h1>
-              <p class="section-subtitle text-white">Release bandwidth user experience research & development branding termsheet business plan advisor analytics ecosystem entrepreneur freemium</p>
+              <p class="section-subtitle text-white">Release bandwidth user experience research &amp; development branding termsheet business plan advisor analytics ecosystem entrepreneur freemium</p>
               <hr class="horizontal-partition" />
               <div class="row pv15">
                   <div class="col-md-4 col-sm-4 col-xs-12">
@@ -181,24 +187,22 @@
               </div>
           </div>
       </section>
-      <section class="amaze-section">
+      <section class="section">
           <div class="container">
 
           </div>
       </section>
       <footer class='jarallax' data-jarallax='{"type": "scale-opacity"}'>
-          <div class="amaze-footer">
-              <div class="container">
-                  <div class="row">
-                      <div class="col-md-4 col-sm-4 col-xs-12">
-                          <h1>Subscribe Now <br /> & Stay Updated</h1>
-                      </div>
-                      <div class="col-md-5 col-sm-5 col-xs-12 p0">
-                          <input type="email" placeholder="Your Email Address" />
-                      </div>
-                      <div class="col-md-3 col-sm-3 col-xs-12 text-center">
-                          <button class="btn wow pulse" data-wow-duration="1.2s" data-wow-iteration="infinite">Subscribe</button>
-                      </div>
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-4 col-sm-4 col-xs-12">
+                      <h1>Subscribe Now <br /> &amp; Stay Updated</h1>
+                  </div>
+                  <div class="col-md-5 col-sm-5 col-xs-12 p0">
+                      <input type="email" placeholder="Your Email Address" />
+                  </div>
+                  <div class="col-md-3 col-sm-3 col-xs-12 text-center">
+                      <button class="btn wow pulse" data-wow-duration="1.2s" data-wow-iteration="infinite">Subscribe</button>
                   </div>
               </div>
           </div>
